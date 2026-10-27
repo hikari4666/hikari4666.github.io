@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hikari Agent — 個人用 AI 助理</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+         max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.7; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3rem; font-size: .85rem; opacity: .7; }
+  code { font-size: .9em; }
+</style>
+</head>
+<body>
+  <h1>Hikari Agent（小光）</h1>
+  <p class="sub">A single-user, personal AI assistant — 個人自用的 AI 助理</p>
+
+  <h2>What this app is / 這是什麼</h2>
+  <p>
+    Hikari Agent is a personal automation assistant operated by one individual for their own use.
+    It connects to that person's own Google account through OAuth 2.0 so the assistant can
+    read and send email, check and create calendar events, and read documents and spreadsheets
+    when the owner asks it to. There is no sign-up, no public user base, and no third-party
+    customers — the only user is the account owner.
+  </p>
+  <p>
+    本應用為個人自用的自動化助理，僅供單一使用者（帳號本人）操作自己的 Google 帳號。
+    透過 OAuth 2.0 授權後，助理可在本人要求下讀取與寄送 Gmail、查詢與建立日曆行程、
+    讀取文件與試算表。本應用不開放註冊、沒有其他使用者，也不對外提供服務。
+  </p>
+
+  <h2>How it works / 運作方式</h2>
+  <ul>
+    <li>Authorization happens once, through Google's standard consent screen.</li>
+    <li>The resulting OAuth token is stored locally on the owner's own machine.</li>
+    <li>All API calls go directly from that machine to Google's APIs — no intermediary server.</li>
+    <li>Access can be revoked at any time from the Google Account permissions page.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>
+    See the <a href="./privacy.html">Privacy Policy</a> for what data is accessed,
+    how it is stored, and how to delete it.
+  </p>
+
+  <footer>
+    Contact: wildland4666 [at] gmail.com<br>
+    Last updated: 2026-10-28
+  </footer>
+</body>
+</html>
